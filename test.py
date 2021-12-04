@@ -5,7 +5,7 @@ from midiutil.MidiFile import MIDIFile
 
 mf = MIDIFile(1)
 mf.addTrackName(0,0, "midi")
-mf.addTempo(0,0,320)
+mf.addTempo(0,0,250)
 
 def get_images_from_video(video_name, time_F):
     video_images = []
@@ -82,8 +82,6 @@ for i in range(0,video_images[60].shape[1]):
 
 print("Debug Message : ")
 print(black_key_x_s)
-cv2.imshow("window",video_images[60])
-cv2.waitKey(0)
 midi_write = []
 midi = {}
 
@@ -140,7 +138,6 @@ for i in range(0,len(video_images)-1):
 midi_write.sort(key = lambda z: z[1])
 for i in midi_write:
     mf.addNote(0,0,i[0],i[1],i[2],100)
-    print(i[1])
 
 with open("output.mid", 'wb') as outf:
     mf.writeFile(outf)
