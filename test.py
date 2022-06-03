@@ -56,7 +56,7 @@ for i in range(0,video_images[60].shape[1]):
         current_status = True
 
 
-#這ㄍ是求(ㄟ ㄈㄜ 蕊 舉)的
+
 black_average = 0
 for i in range(0,video_images[60].shape[1]):
     black_average += ((int(video_images[60][316,i][0])+int(video_images[60][316,i][1])+int(video_images[60][316,i][2]))/3)*0.33
