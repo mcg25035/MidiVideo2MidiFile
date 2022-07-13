@@ -6,8 +6,8 @@
 
 🌐 README 语言
 >&emsp;&nbsp;[　]　[English](https://github.com/mcg25035/MidiVideo2MidiFile/blob/master/README.md)<br>
-&emsp;&nbsp;[⚝]　[中文繁体](https://github.com/mcg25035/MidiVideo2MidiFile/blob/master/README/README_TC.md)<br>
-&emsp;&nbsp;[　]　中文简体
+&emsp;&nbsp;[　]　[中文繁体](https://github.com/mcg25035/MidiVideo2MidiFile/blob/master/README/README_TC.md)<br>
+&emsp;&nbsp;[⚝]　中文简体
 
 <br><br>
 <img src="https://media.discordapp.net/attachments/763787703958372402/992695856492982352/unknown.png" width=16> 简介
