@@ -1,7 +1,7 @@
  
 # <img src="https://cdn.discordapp.com/attachments/879008540839256134/996740051323068466/unknown.png" width=48> **MidiVideo To MidiFile**
 <br>
-❕This README.md file is written after that when the project done. (2021/12/31)
+❕This README.md file is written after that when the project done (2021/12/31). 
 &nbsp;
 
 <br>
