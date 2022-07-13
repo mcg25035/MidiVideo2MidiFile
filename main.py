@@ -1,7 +1,18 @@
 import cv2
 import time as t
 import math
+import os
 from midiutil.MidiFile import MIDIFile
+
+if not os.path.exists("./checked.tag"):
+    print("environment not checked , run CheckRequire.py first")
+    exit()
+
+os.remove("./checked.tag")
+
+if not os.path.exists("./input.mp4"):
+    print("input.mp4 not found")
+    exit()
 
 mf = MIDIFile(1)
 mf.addTrackName(0,0, "midi")
@@ -34,7 +45,7 @@ def black_note_name_convert(key_num):
 	    return [1,3,6,8,10][z-1]+(math.floor((key_num-1)/7)+2)*12
 
 time_F = 1
-video_name = 'a.mp4'
+video_name = 'input.mp4'
 print("loading piano roll video")
 video_images = get_images_from_video(video_name, time_F)
 print("video load complete!")
@@ -139,7 +150,10 @@ midi_write.sort(key = lambda z: z[1])
 for i in midi_write:
     mf.addNote(0,0,i[0],i[1],i[2],100)
 
-with open("output.mid", 'wb') as outf:
+file_number = 0
+while os.path.exists("./output/output"+str(file_number)+".midi"):
+    file_number += 1
+with open("./output/output"+str(file_number)+".midi", 'wb') as outf:
     mf.writeFile(outf)
 
-print("midi file generated!")
+print("midi file generated! filename : "+"./output/output"+str(file_number)+".midi")
