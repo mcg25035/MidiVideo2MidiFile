@@ -6,7 +6,7 @@
 &nbsp;
 
 🌐 README 語言
->&emsp;&nbsp;[　]　[English](https://github.com/mcg25035/MidiVideo2MidiFile/blob/master/README_TC.md)<br>
+>&emsp;&nbsp;[　]　[English](https://github.com/mcg25035/MidiVideo2MidiFile/blob/master/README.md)<br>
 &emsp;&nbsp;[⚝]　中文繁體<br>
 &emsp;&nbsp;[　]　[中文簡体](https://github.com/mcg25035/MidiVideo2MidiFile/blob/master/README/README_SC.md)
 
